@@ -1,0 +1,13 @@
+!!! 5
+
+html
+  head
+    title= headTitle
+
+  body
+    h1= bodyTitle
+    p=  description
+    
+    - each comment in comments
+      h2= comment.title
+      p=  comment.html
