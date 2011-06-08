@@ -3,3 +3,10 @@ JadeSrv is a simple Jade Template Server built on Node.js.  Its purpose is to un
 1. Mimicking the Node.js fs on the client side, using DOM storage when available,
 2. Adding an "include" option to Jade templates,
 3. Rendering Jade templates via POSTing JSON so that any language (e.g. PHP) can use JadeSrv to render templates.
+
+We'll need to:
+
+1. Modify Jade to allow an "include" option,
+2. Create a client side filesystem object that can mimick the fs object used in Node.js,
+3. Modify Jade to use a generic fs object, allowing a client to pass its own as if it were running in Node.js,
+4. Sync the client fs with the server
