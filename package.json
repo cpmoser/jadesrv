@@ -1,0 +1,4 @@
+{
+	"name":	"jadesrv",
+	"main":	"./lib/jadesrv.js"
+}
