@@ -10,3 +10,13 @@ We'll need to:
 2. Create a client side filesystem object that can mimick the fs object used in Node.js,
 3. Modify Jade to use a generic fs object, allowing a client to pass its own as if it were running in Node.js,
 4. Sync the client fs with the server
+
+Todos:
+
+1. Write a simple http server in Node.js that will do the following:
+	a. Read a POST request that will render a template at the given URL correlating to a directory of templates, using POSTed JSON as the "locals" variable for Jade,
+	b. Read a GET request that will return an unparsed Jade template.
+2. Write a simple PHP class that will POST to the JadeSrv to get a rendered template.
+3. Modify Jade to use includes
+	a. We may have to pass an fs object to Jade.  This will become more important in doing the client side part.
+4. Create a clientfs object that will act as a Node fs object in our modifications to Jade.
